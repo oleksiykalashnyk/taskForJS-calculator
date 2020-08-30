@@ -11,9 +11,9 @@ let firstNumber,
 
 
     askFirstNumber = () => {
-        firstNumber = +prompt("Enter the first number (must not be zero)", "");
+        firstNumber = +prompt("Enter first number (can't be zero)", "");
         if (firstNumber == 0 || isNaN(firstNumber)) {
-            const askError = confirm("Error! The first number must not be zero or a string! Re-enter the number?");
+            const askError = confirm("Error! First number can't be zero or a string! Re-enter the number?");
             if (!askError) {
                 start();
             } else {
@@ -35,9 +35,9 @@ let firstNumber,
     },
 
     askSecondNumber = () => {
-        secondNumber = +prompt("Enter the second number (must not be zero)", "");
+        secondNumber = +prompt("Enter second number (can't be zero)", "");
         if (secondNumber == 0 || isNaN(secondNumber)) {
-            const askError = confirm("Error! The second number must not be zero or a string! Re-enter the number?");
+            const askError = confirm("Error! Second number can't be zero or a string! Re-enter the number?");
             if (!askError) {
                 start();
             } else {
